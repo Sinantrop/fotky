@@ -1,0 +1,22 @@
+enfuse -o final_2.tiff  --contrast-weight=1.00 --exposure-weight=0.00 --saturation-weight=0.00 --contrast-window-size=51 --hard-mask --gray-projector=luminance *.tiff
+
+align_image_stack -a aligned_ -v -m --use-given-order *.tiff
+
+ dcraw -T -t 0 *.CR2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+systemctl suspend
